@@ -6,7 +6,8 @@ Hold **Right Option** (macOS) or **Right Ctrl** (Ubuntu) to talk; a pill drops f
 Early development. Architecture and roadmap live in [CLAUDE.md](CLAUDE.md).
 
 ```bash
-uv sync
+git clone https://github.com/chro11os/vice.git && cd vice
+./scripts/install.sh   # deps, Kokoro voice model, Ollama + qwen3:8b, smoke test (safe to re-run)
 uv run vice          # start the daemon
 uv run vice status
 uv run vice quit
